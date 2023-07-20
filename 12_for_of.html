@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let brands = ["애플", "구글", "아마존", "마소", "메타"];
+      for(const brand of brands){
+        console.log(brand);
+      }
+      console.log("==========================================")
+      for(let i = 0; i < brands.length; i++){
+        console.log(brands[i])
+      }
+
+      let i = 0;
+      while(i<brands.length){
+        console.log(brands[i])
+        i++
+      }
+
+      console.log("==========================================")
+      const lang = "JavaScript";
+      for(const char of lang){
+        console.log(char);
+      }
+
+      let num = 9012341623547;
+      let numString = num.toString();
+      for(const digit of numString){
+        console.log(digit)
+      }
+    </script>
+  </body>
+</html>

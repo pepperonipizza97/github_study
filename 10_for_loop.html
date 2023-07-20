@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let brands = ["애플", "구글", "아마존", "마소", "메타"];
+
+        // console.log(brands[0]);
+        // console.log(brands[1]);
+        // console.log(brands[2]);
+        // console.log(brands[3]);
+        // console.log(brands[4]);
+
+        f = function(){
+            console.log('start');
+            return 0;
+        }
+        console.log("======================")
+
+        for(let i=f(); i<brands.length; i++){
+            console.log(brands[i]);
+        }
+
+        const drinkList = [
+            {
+                name : "오렌지",
+                price : 1000,
+            },
+            {
+                name : "파워에이드",
+                price : 1200,
+            },
+            {
+                name : "커피",
+                price : 700,
+            },
+            {
+                name : "보리차",
+                price : 1200,
+            },
+            {
+                name : "코카콜라",
+                price : 1000,
+            }
+        ]
+    const inputCoin = 700 // prompt("가격을 입력해주세요");
+    const drinkLength = drinkList.length;
+    const availableDrinkList = [];
+
+    for(let i = 0 ; i < drinkLength; i++){
+        let drink = drinkList[i];
+        if(i == 5){
+            break;
+        }
+        console.log(i)
+    }
+    console.log(availableDrinkList)
+
+    // continue
+    for(let i = 0; i < 10 ; i++){
+        if(i==5){
+            continue;
+        }
+        console.log(i)
+    }
+    </script>
+</body>
+</html>

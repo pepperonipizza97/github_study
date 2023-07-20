@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 조건문 - if, switch
+        // if(조건문 {
+        //    조건식을 만족하면 코드 블록을 실행
+        // })
+        
+        // if(조건식) {
+
+        // }else {
+
+        // }
+
+        // if(조건식1){
+
+        // }else if(조건식2){
+
+        // }else if(조건식3){
+
+        // }else {
+
+        // }
+
+        // 나이에 따른 버스 요금을 계산하는 조건문
+        let busFare = 0;
+        let age = 13;
+
+        if(age < 8){
+            busFare = 0;   
+        }else if(age >= 8 && age < 14){
+            busFare = 450;
+        }else if(age >= 14 && age < 20){
+            busFare = 700;
+        }else if(age >=20 && age < 65){
+            busFare = 1000;
+        }else {
+            busFare = 0;
+        }
+        console.log("버스요금: ", busFare)
+
+        // false로 해석되는 것들
+        // null
+        // undefined
+        // 0
+        // "" - 비어있는 문자열
+        
+        x  = ""
+        if(x){
+            console.log("x는 빈문자열");
+        }else{
+            console.log("else구문이 실행");
+        }
+    </script>
+</body>
+</html>

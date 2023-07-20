@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/js_common.js"></script>
+  </head>
+  <body>
+    <script>
+      let n1 = 3;
+      let n2 = 5;
+      let sum1 = plus(n1, n2);
+      console.log(sum1);
+
+      let n3 = 3;
+      let n4 = 5;
+      let sum2 = plus(n3, n4);
+      console.log(sum2);
+
+      let n5 = 3;
+      let n6 = 5;
+      let sum3 = plus(n5, n6);
+      console.log(sum3);
+
+      // 1. 함수(function) 선언식 - 메소드 (Method)
+      // function 함수명(매개변수, 매개변수, ....){
+      //
+      // }
+      console.log(plus(30, 30));
+
+      function plus(num1, num2) {
+        let sum = num1 + num2;
+        return sum;
+      }
+      //   function taxAmount(productAmount){
+      //     const tax = 0.15;
+      //     return productAmount * tax;
+      //   }
+      console.log("부과세: ", taxAmount(23400));
+
+      //   sum(50, 50)
+
+      // let x = 10;
+      // let z = y + x;
+
+      // let y = 30;
+
+      // 2. 함수 표현식
+      const sum = function (num1, num2) {
+        return num1 + num2;
+      };
+      console.log(sum(10, 10));
+
+      // 3. Function 생성자 함수
+      // 자바스크립트 내장 함수인 Function
+      // 문자열로 파라미터, 코드블록 순서대로 넣어서 만든다.
+      const add = new Function("num1", "num2", "return num1 + num2");
+      //   function add(num1, num2){
+      //     return num1 + num2;
+      //   }
+      console.log(add(21, 27));
+
+      function calculator(num1, num2, op) {
+        if (op === "+") {
+          return num1 + num2;
+        } else if (op === "-") {
+          return num1 - num2;
+        } else if (op === "*") {
+          return num1 * num2;
+        }
+      }
+      console.log(calculator(100, 100, "+"));
+
+      let op1 = "*";
+      let cal = new Function(
+        "num1",
+        "num2",
+        "op1",
+        "return num1" + op1 + "num2"
+      );
+
+      console.log(cal(5, 10));
+      op1 = "+";
+      cal = new Function("num1", "num2", "op1", "return num1" + op1 + "num2");
+      console.log(cal(5, 10));
+    </script>
+  </body>
+</html>

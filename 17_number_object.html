@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Math Object
+
+        // Number 객체
+        let num = 123;
+        // toString() Number -> String
+        let strNum = num.toString();
+        console.log(strNum);
+
+        // toExponential() - 숫자를 지수표기법으로 반환
+        let x = 10.646;
+        console.log(x.toExponential(3));
+
+        // toFixed() - 소숫점 몇자리까지 보여줄지 결정하는 함수
+        console.log(x.toFixed(0));
+        console.log(x.toFixed(1));
+        console.log(x.toFixed(3));
+
+        // toPrecision() - 정수와 소수점 모두를 합쳐서 몇자리까지 보여줄지 결정하는 함수
+        console.log(x.toPrecision(2));
+        console.log(x.toPrecision(3));
+
+        // parseInt() - 문자를 정수로 변환
+        console.log(parseInt("3"));
+        console.log(parseInt(12.33));
+
+        // parserFloat() -- 부동소수점으로 반환
+        console.log(parseFloat("12.33"));
+        console.log(Number.MAX_SAFE_INTEGER);
+        console.log(Number.MIN_SAFE_INTEGER);
+    </script>
+</body>
+</html>

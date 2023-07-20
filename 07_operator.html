@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 연산자 : 할당 연산자, 비교 연산자, 산술 연산자
+      //         논리 연산자, 문자열 연산자, 조건 삼항 연산자
+
+      // 1. 할당 연산자
+      let x = 10;
+      let y = 2;
+      x = 3;
+
+      //2. 산술 연산자
+      x = x + y;
+      x = x - y;
+      x = x * y;
+      x = x / y;
+
+      // % 나눈 나머지
+      x = 5;
+      y = 2;
+      let z = x % y;
+
+      // ** 제곱
+      x = 3;
+      y = 3;
+      x = x ** 2; // x*x*x
+
+      //복합 할당 연산자
+      x += y;
+      x -= y;
+      x *= y;
+      x /= y;
+
+      //3. 비교 연산자
+      x = 3;
+      y = 4;
+      console.log(x == y);
+
+      x = 3;
+      y = "3";
+
+      console.log(x == y);
+      console.log(x === y);
+      console.log(x != y);
+      console.log(x !== y);
+
+      // 4. 산술 연산자
+      // 증가 연산자, 감소 연산자, 단항 부정 연산자, 숫자화연산자
+
+      // 증가 연산자 ++ , 1을 증가
+      x = 5;
+      y = x++; // y = x, x = x + 1
+      console.log(x, y);
+
+      x = 5;
+      y = ++x; // x = x + 1, y = x
+      console.log(x, y);
+
+      // 감소 연산자 --, 1을 감소
+      x = 5;
+      y = x--; // y = x, x = x - 1
+      console.log(x, y);
+
+      x = 5;
+      y = --x; // x = x - 1, y = x
+      console.log(x, y);
+
+      // 숫자화 연산자 : 숫자가 아닌 문자 /boolean 값을 숫자로 변환 시도를 함
+      x = "3";
+      y = +x;
+      console.log(y);
+      console.log(true);
+      console.log(+true);
+
+      // 5. 논리 연산자
+      // AND &&
+      let o = true && false;
+      o = 3 > 2 && 8 > 7 && 5 == "5";
+
+      // or ||
+      o = true || false;
+      o = 3 > 4 || 4 < 2 || 2 > 1;
+      
+      // 6. 조건(삼항) 연산자
+      let age = 16;
+      let isAdult = age >= 20 ? "성인" : "미성년자"; // (조건식) ? "값" : "값"
+
+      let jumsu = 80;
+      let grade = null;
+      if(jumsu > 90){
+        grade = "A"
+      }else if(jumsu > 80){
+        grade = "B"
+      }else if(jumsu > 70){
+        grade = "C"
+      }
+      console.log(grade);
+
+      grade = jumsu >= 90 ? "A" : jumsu >= 80 ? "B" : "C";
+      console.log(grade);
+    </script>
+  </body>
+</html>

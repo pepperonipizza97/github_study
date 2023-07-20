@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 데이터 기본 타입
+        // 1. 문자열(String) - String 객체 
+        // 쌍따옴표, 혹은 홑 따옴표을 이용해서 데이터를 할당 
+        let name1 = "John Doe";
+        
+        let str1 = '그는 "존"이라고 합니다.';
+
+        // + 문자열 연결 
+        let x = 10;
+        let y = 20;
+        let z = x + y;
+
+        let firstName = "John";
+        let lastName = " Doe";
+        let fullName = firstName + lastName;
+        console.log(fullName);
+
+        //2. 숫자형(Number) - Number 객체
+        // 모든 숫자형 데이터를 64비트 부동소수점으로 관리
+        let num1 = 13;
+        let num2 = 3.15;
+        console.log(num1,num2);
+        
+        //3. Boolean (참/거짓)
+        // 참 - true, 거짓 - false
+        let userInputAge = 30; //prompt("나이를 입력해주세요: 40");
+        let adultAge = 20;
+        let isAdult = userInputAge >= adultAge;
+        console.log(isAdult);
+
+        //4. undefined
+        // 정의 되지 않았다.
+        // undefined는 데이터 타입이자 동시에 데이터 값 사용가능.
+        // 실행되는 시점, 즉 런타입 시점에 브라우저 엔진이 
+        // 자동으로 undefined로 초기화 한다.
+        let a;
+        console.log(a);
+        a = 10;
+        console.log(a)
+
+        //5. null
+        // "없음"을 의미
+        // null을 개발자가 의도적으로 할당하는 값 
+        let t = "괴장히 큰 사이즈의 데이터";
+        // ....
+        t = null;
+        console.log(null);
+
+        //6. symbol
+        // ES6 추가 
+
+    
+    </script>
+</body>
+</html>
